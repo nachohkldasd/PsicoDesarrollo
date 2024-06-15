@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicodesarrollo - María José Navarrete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Psicodesarrollo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#shop">Tienda</a></li>
+                <li><a href="https://www.instagram.com/psicodesarrollo" target="_blank">Instagram</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div class="content">
+                <h1>Fomentando el bienestar emocional: Recursos de salud mental para niños y jóvenes</h1>
+                <p>Orientación basada en la crianza consciente, responsable y respetuosa</p>
+                <img src="images/banner.png" alt="Imagen Principal">
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="content">
+                <h2>Sobre mí</h2>
+                <img src="images/maria_jose.png" alt="María José Navarrete" class="profile-photo">
+                <p>Hola, soy María José Navarrete, Psicóloga con un Máster en Necesidades, Derechos y Cooperación al Desarrollo de la Infancia de la Universidad Autónoma de Madrid. Me especializo en el desarrollo emocional y cognitivo de los niños durante sus primeros años, así como en brindar apoyo psicológico tanto a padres como a sus hijos. Con años de experiencia en psicología clínica, educativa y jurídica, mi enfoque se basa en la promoción de un ambiente sano y seguro para el desarrollo integral de los niños y adolescentes.</p>
+                <p>He trabajado en diversas instituciones, incluyendo fundaciones y centros educativos, donde he evaluado y tratado a niños y adolescentes en riesgo social. Mi objetivo es ofrecer una atención personalizada y profesional que ayude a los niños a enfrentar sus desafíos y alcanzar su máximo potencial.</p>
+            </div>
+        </section>
+        
+        <section id="services">
+            <div class="content">
+                <h2>Servicios</h2>
+                <div class="service">
+                    <img src="images/service1.png" alt="Terapia individual">
+                    <h3>Terapia psicológica individual para niños y adolescentes</h3>
+                    <p>Brindo apoyo emocional y terapéutico para ayudar a los niños y adolescentes a enfrentar sus desafíos y alcanzar su máximo potencial.</p>
+                    <p class="price">Precio por consulta: 40.000 pesos</p>
+                </div>
+                <div class="service">
+                    <img src="images/service2.png" alt="Asesoramiento para padres">
+                    <h3>Asesoramiento para padres</h3>
+                    <p>Ofrezco orientación y estrategias efectivas para que los padres puedan apoyar adecuadamente el desarrollo emocional y psicológico de sus hijos.</p>
+                </div>
+                <h4>Modalidades de Terapia:</h4>
+                <ul>
+                    <li>Presencial</li>
+                    <li>Online</li>
+                </ul>
+                <div class="appointment">
+                    <h3>Pedir Hora</h3>
+                    <form id="appointment-form">
+                        <label for="appointment-name">Nombre:</label>
+                        <input type="text" id="appointment-name" name="name" required>
+                        <label for="appointment-email">Email:</label>
+                        <input type="email" id="appointment-email" name="email" required>
+                        <label for="appointment-date">Fecha:</label>
+                        <input type="date" id="appointment-date" name="date" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section id="shop">
+            <div class="content">
+                <h2>Tienda</h2>
+                <div class="product-grid-horizontal">
+                    <div class="product">
+                        <h3>Curso de Crianza Consciente</h3>
+                        <p>Descripción del curso</p>
+                        <p class="price">Precio: $50</p>
+                        <button onclick="addToCart('Curso de Crianza Consciente', 50)" class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <h3>Artículo de Desarrollo Infantil</h3>
+                        <p>Descripción del artículo</p>
+                        <p class="price">Precio: $20</p>
+                        <button onclick="addToCart('Artículo de Desarrollo Infantil', 20)" class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="content">
+                <h2>Contacto</h2>
+                <form id="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Teléfono: <a href="tel:+56950021507">+56 950021507</a></p>
+        <p>Email: <a href="mailto:ps.mjosenavarrete@gmail.com">ps.mjosenavarrete@gmail.com</a></p>
+        <p>&copy; 2024 Psicodesarrollo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
